@@ -1,13 +1,13 @@
 # CRUD com Node.js, Express e MongoDB
 
-Este é um projeto CRUD (Create, Read, Update, Delete) utilizando Node.js, Express e MongoDB. Ele fornece uma API RESTful para gerenciar recursos no banco de dados MongoDB.
+Este é um projeto CRUD (Create, Read, Update, Delete) utilizando Node.js, Express e Prisma. Ele fornece uma API RESTful para gerenciar recursos no banco de dados.
 
 # Tecnologias Utilizadas
 Node.js
 
 Express.js
 
-MongoDB
+Prisma ORM
 
 Mongoose
 
@@ -25,6 +25,12 @@ npm install my-project
  npm install
 
 4:Configure as variáveis de ambiente:
+
+5:Inicialize o Prisma:
+npx prisma init
+
+6:Execute as migrações para criar as tabelas no banco:
+npx prisma migrate dev --name init
 
  PORT=3000
 MONGO_URI=mongodb://localhost:27017/nome-do-banco 
